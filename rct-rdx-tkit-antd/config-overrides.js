@@ -1,7 +1,4 @@
-const lessRegex = /\.less$/;
-const lessModuleRegex = /\.module\.less$/;
-
-const { override, fixBabelImports, addLessLoader, addWebpackPlugin } = require('customize-cra');
+const { override, fixBabelImports, addLessLoader, addWebpackPlugin, addPostcssPlugins } = require('customize-cra');
 const AntdDayJsWebpackPlugin = require('antd-dayjs-webpack-plugin');
 module.exports = override(
     fixBabelImports('antd', {
@@ -13,10 +10,11 @@ module.exports = override(
         lessOptions: {
             javascriptEnabled: true,
             modifyVars: {
-                '@primary-color': '#1DA57A',
+                '@primary-color': '#1262ae',
             }
         }
     }),
+    addPostcssPlugins([require('autoprefixer')]),
     addWebpackPlugin(
         new AntdDayJsWebpackPlugin()
     )
