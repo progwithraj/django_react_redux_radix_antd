@@ -17,12 +17,12 @@
 
 body {
     margin: 0;
-    font-family: "Caveat" !important;
+    font-family: "Rubik" !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-    font-family: "Caveat" !important;
+    font-family: "Rubik" !important;
     /* font-size: 133px !important; */
 }
