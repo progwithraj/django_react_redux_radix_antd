@@ -12,3 +12,7 @@
 2. fill the required environment variables
 
 ---
+
+#### tailwind & .less functionalities added. used customised-cra & customize-cra-less-loader. check postcss.config.js, config-override.js, tailwind.js for configurations
+
+---
