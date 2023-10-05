@@ -17,7 +17,7 @@ module.exports = override(
             }
         }
     }),
-    // addWebpackPlugin(
-    //     new AntdDayJsWebpackPlugin()
-    // )
+    addWebpackPlugin(
+        new AntdDayJsWebpackPlugin()
+    )
 )
