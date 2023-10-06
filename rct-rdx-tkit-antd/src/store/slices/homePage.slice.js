@@ -9,7 +9,7 @@ const initialState = {
 
 export const fetchUserData = createAsyncThunk(
     'homePage/fetchUserData',
-    api.get(FETCH_USER, { withCredentials: true })
+    // api.get(FETCH_USER, { withCredentials: true })
 )
 
 const homePageSlice = createSlice({
