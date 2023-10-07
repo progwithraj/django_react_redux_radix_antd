@@ -16,3 +16,9 @@
 #### tailwind & .less functionalities added. used customised-cra & customize-cra-less-loader. check postcss.config.js, config-override.js, tailwind.js for configurations
 
 ---
+
+#### antd gulp less integration blog
+
+`https://jfelix.info/blog/dynamic-themes-in-ant-design-how-to-change-between-light-and-dark-theme`
+
+---

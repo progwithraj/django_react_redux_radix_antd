@@ -33,7 +33,7 @@ function DropdownMenu({ items = null, components = null, isOpen, avatarSource })
         </Menu>
     );
     return (
-        <div className="justify-start align-middle items-center">
+        <div className="">
             <Popover trigger="hover" content={<div>This is a Shadcn UI hovercard-like component.</div>}>
 
                 <Dropdown
