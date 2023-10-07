@@ -36,10 +36,10 @@ module.exports = {
           layout: {}, // dark theme layout tokens
           colors: { // dark theme colors
             primary: {
-              DEFAULT: "#BEF264",
+              DEFAULT: "yellow",//"#BEF264",
               foreground: "#000000",
             },
-            focus: "#BEF264",
+            focus: "yellow",
           },
         },
         // ... custom themes

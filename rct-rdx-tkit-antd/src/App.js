@@ -1,11 +1,13 @@
 import Router from './router'
+import React, { useState, useEffect } from 'react';
+
 import { NextUIProvider } from "@nextui-org/react";
 import { BrowserRouter } from 'react-router-dom'
 import TopBar from './components/Topbar';
 import { getCurrentTheme } from './utils/theme';
 // import { ThemeSwitcherProvider } from "react-css-theme-switcher";
 import { ThemeContext, useTheme } from 'antd';
-import { ConfigProvider } from 'antd';
+import { Button, ConfigProvider, Space, Input, ColorPicker, Divider } from 'antd';
 
 function App() {
   const themes = {
@@ -13,11 +15,19 @@ function App() {
     light: `${process.env.PUBLIC_URL}/light-theme.css`,
   };
   const theme = getCurrentTheme();
+  // const colorToken = generateColorToken(theme);
+  const [primary, setPrimary] = useState('#1677ff');
 
   return (
     <div className="App">
       <NextUIProvider theme={theme}>
-        <ConfigProvider theme={theme}>
+        <ColorPicker showText value={primary} onChangeComplete={(color) => setPrimary(color.toHexString())} />
+        <ConfigProvider theme={{
+          token: {
+            colorPrimary: primary,
+          }
+        }
+        } >
 
           <BrowserRouter>
             {/* <ThemeSwitcherProvider themeMap={themes} defaultTheme="light"> */}
@@ -29,7 +39,7 @@ function App() {
 
       </NextUIProvider>
 
-    </div>
+    </div >
   );
 }
 
