@@ -6,11 +6,6 @@ import { UserTwitterCard } from '../TwitterCard'
 
 export function AvatarWithMenuAndHoverCard({ user }) {
 
-    const content = (
-        <div>
-            <h2>this is content</h2>
-        </div>
-    )
     return (
         <div>
             <PopOver
@@ -25,7 +20,7 @@ export function AvatarWithMenuAndHoverCard({ user }) {
                             src: user.avatar
                         }
                         }
-                        classNames={'light:text-black text-redGlow'}
+                        classNames={'light:text-white text-redGlow'}
                     />
                 }
             />

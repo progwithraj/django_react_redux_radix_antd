@@ -55,7 +55,6 @@ function TopBar() {
                     {
                         topbarLeftMenuOptions.map(item => (
                             <h2 className={`${theme} text-primary topbar-left-container-typography`} key={item} > {item}</h2>
-                            // <h2 className={`netflix topbar-left-container-typography`} key={item} > {item}</h2>
                         ))
                     }
                     <div className="avatar-div-container justify-end ml-4">
