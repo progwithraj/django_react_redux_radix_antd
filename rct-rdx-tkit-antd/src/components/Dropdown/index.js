@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { Dropdown, Menu, Avatar, Popover } from 'antd'
+import { Dropdown, Menu, Avatar } from 'antd'
 
-function DropdownMenu({ items = null, components = null, isOpen, avatarSource }) {
+function DropdownMenu({ items = null, components = null, letMenuVisible = false, avatarSource }) {
     const [menuVisible, setMenuVisible] = useState(false);
 
     // Function to handle Avatar click and toggle the menu visibility
@@ -32,23 +32,21 @@ function DropdownMenu({ items = null, components = null, isOpen, avatarSource })
             ))}
         </Menu>
     );
+
     return (
         <div className="">
-            <Popover trigger="hover" content={<div>This is a Shadcn UI hovercard-like component.</div>}>
-
-                <Dropdown
-                    overlay={menu}
-                    trigger={['click']}
-                    visible={menuVisible}
-                    onVisibleChange={(visible) => setMenuVisible(visible)}
-                >
-                    <Avatar
-                        src={avatarSource}
-                        size={40}
-                        onClick={handleAvatarClick}
-                    />
-                </Dropdown>
-            </Popover>
+            <Dropdown
+                overlay={menu}
+                trigger={['click']}
+                open={menuVisible}
+                onOpenChange={(visible) => setMenuVisible(visible)}
+            >
+                <Avatar
+                    src={avatarSource}
+                    size={40}
+                    onClick={handleAvatarClick}
+                />
+            </Dropdown>
         </div>
     )
 }

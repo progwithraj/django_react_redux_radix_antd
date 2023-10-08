@@ -1,0 +1,93 @@
+import { theme } from "@nextui-org/react";
+
+const netflixTheme = {
+    ...theme,
+    // extend: "dark", // <- inherit default values from dark theme
+    colors: {
+        background: "#E50914",
+        foreground: "#00000",
+        primary: "#141414",
+        secondary: "#2abee7",
+        primaryLight: "#0096D2",
+        primaryDark: "#00599C",
+        secondaryLight: "#D946CA",
+        secondaryDark: "#B40082",
+        success: "#4CAF50",
+        successLight: "#81C784",
+        successDark: "#388E3C",
+        info: "#00BCD4",
+        infoLight: "#C6DFEF",
+        infoDark: "#0097A7",
+        warning: "#FFC107",
+        warningLight: "#FFD54F",
+        warningDark: "#DBA500",
+        error: "#F44336",
+        errorLight: "#FFCDD2",
+        errorDark: "#D32F2F",
+        focus: "#F182F6",
+        neon: "#2abee7",
+        redGlow: "#F44336",
+    },
+    layout: {
+        disabledOpacity: "0.3",
+        radius: {
+            small: "4px",
+            medium: "6px",
+            large: "8px",
+        },
+        borderWidth: {
+            small: "1px",
+            medium: "2px",
+            large: "3px",
+        },
+        spacing: {
+            small: "4px",
+            medium: "8px",
+            large: "16px",
+        },
+        sizing: {
+            small: "24px",
+            medium: "48px",
+            large: "96px",
+        },
+        positioning: {
+            absolute: "absolute",
+            fixed: "fixed",
+            relative: "relative",
+            static: "static",
+        },
+        flexbox: {
+            flex: "flex",
+            flexDirection: "row",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            alignItems: "center",
+            alignContent: "center",
+            order: 0,
+        },
+        grid: {
+            gridTemplateColumns: "repeat(12, 1fr)",
+            gridTemplateRows: "repeat(12, 1fr)",
+            gridColumn: 1,
+            gridRow: 1,
+            gridTemplateAreas: "none",
+            placeContent: "center",
+            alignContent: "center",
+            justifyItems: "center",
+            alignItems: "center",
+        },
+        other: {
+            border: "1px solid #000",
+            borderRadius: "4px",
+            boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.25)",
+            opacity: 1,
+            display: "block",
+            visibility: "visible",
+            transform: "",
+            transition: "",
+            animation: "",
+        },
+    },
+};
+
+export default netflixTheme;
